@@ -1,7 +1,7 @@
 test:
   override:
     - php ./test.php
-    deployment:
+deployment:
   staging:
     branch: master
     codedeploy:
