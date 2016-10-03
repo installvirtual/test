@@ -3,14 +3,15 @@ test:
     - php ./test.php
 deployment:
   staging:
-    branch: master
+    branch: development
     codedeploy:
       my-app:
         application_root: /
-        region: us-east-1
         revision_location:
           revision_type: S3
           s3_location:
             bucket: cka-bucket
-            key_pattern: cka-{BRANCH}-{SHORT_COMMIT}
-        deployment_group: cka-group
+            key_pattern: my-app-{SHORT_COMMIT}-{BUILD_NUM}
+        region: us-east-1
+        deployment_group: staging-instances
+        deployment_config: CodeDeployDefault.AllAtOnce
