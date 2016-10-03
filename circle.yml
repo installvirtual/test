@@ -1,9 +1,9 @@
 test:
   override:
-    - php ./test.php --unit-tests
+    - php ./test.php
 deployment:
   staging:
     branch: master
     codedeploy:
-      myfirstapp:
-        deployment_group: my-deployment-group
+      circleci-demo-app:
+        deployment_group: circleci-demo-dg
