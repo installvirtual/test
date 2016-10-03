@@ -5,5 +5,12 @@ deployment:
   staging:
     branch: master
     codedeploy:
-      myapp:
-        deployment_group: my-deployment-group
+      my-app:
+        application_root: /
+        region: us-east-1
+        revision_location:
+          revision_type: S3
+          s3_location:
+            bucket: cka-bucket
+            key_pattern: cka-{BRANCH}-{SHORT_COMMIT}
+        deployment_group: cka-group
