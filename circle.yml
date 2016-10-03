@@ -13,5 +13,5 @@ deployment:
             bucket: cka-bucket
             key_pattern: my-app-{SHORT_COMMIT}-{BUILD_NUM}
         region: us-east-1
-        deployment_group: staging-instances
+        deployment_group: staging
         deployment_config: CodeDeployDefault.AllAtOnce
