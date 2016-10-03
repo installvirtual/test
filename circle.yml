@@ -12,5 +12,5 @@ deployment:
           revision_type: S3
           s3_location:
             bucket: cka-bucket-ap-south-1
-            key_pattern: appname-1234-{BRANCH}-{SHORT_COMMIT}
+            key_pattern: myapp-{BRANCH}-{SHORT_COMMIT}
         deployment_group: my-deployment-group
