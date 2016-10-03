@@ -5,13 +5,13 @@ deployment:
   staging:
     branch: master
     codedeploy:
-      my-app:
+      my-apps:
         application_root: /
         revision_location:
           revision_type: S3
           s3_location:
             bucket: cka-bucket
-            key_pattern: my-app-{SHORT_COMMIT}-{BUILD_NUM}
+            key_pattern: my-apps-{SHORT_COMMIT}-{BUILD_NUM}
         region: us-east-1
         deployment_group: staging
         deployment_config: CodeDeployDefault.AllAtOnce
