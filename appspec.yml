@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
- - source: /www
-   destination: /var/www/html/www
- - source: /index.php
+ - source: /Users/cka/test/test/www
+   destination: /var/www/html
+ - source: /Users/cka/test/test/index.php
    destination: /var/www/html/index.php
