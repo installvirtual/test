@@ -14,4 +14,4 @@ deployment:
             key_pattern: my-apps-{SHORT_COMMIT}-{BUILD_NUM}.tar.gz
         region: us-east-1
         deployment_group: staging
-        deployment_config: CodeDeployDefault.AllAtOnce
+        deployment_config: CodeDeployDefault.OneAtATime
